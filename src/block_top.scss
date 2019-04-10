@@ -1,0 +1,51 @@
+
+@import "const";
+
+.block-top{
+  @include block-container-white;
+
+  .half-block-top-left{
+    @include half-block;
+    font-size: 25px;
+    line-height: 1.5;
+    padding: 10px;
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 40px;
+    }
+
+    .buttons-container{
+      width: 100%;
+    }
+
+    @include google-button;
+
+    .google-button{
+      padding-left: 8px;
+      padding-right: 10px;
+      background: #2e468e;
+      color: white;
+    }
+
+    .buttons-container {
+      span {
+        font-size: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+
+
+
+  }
+  .half-block-top-right{
+    @include half-block;
+    background-image: url("https://teambit.io/wp-content/themes/teambeat/img/illustration-main.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

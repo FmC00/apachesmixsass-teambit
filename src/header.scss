@@ -1,0 +1,43 @@
+header {
+  width: 100vw;
+  height: 80px;
+  padding-top: 15px;
+  border-bottom: 1px solid $font_color;
+  position: relative;
+  line-height: 45px;
+
+  span {
+    color: $font_color;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  i {
+    margin-left: 3px;
+  }
+
+  .nav-links-container {
+  margin-right: 59px;
+  float: right;
+  }
+
+  .logo-container {
+    width: 110px;
+    height: 65px;
+    margin-left: 59px;
+    background-image: image("/img/teambit_logo.svg");
+    float: left;
+  }
+
+}
+
+// Google button style
+@include google-button;
+
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
