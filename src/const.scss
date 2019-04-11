@@ -1,0 +1,107 @@
+// general rules
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.total-page-container {
+  width: 100%;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 22px;
+}
+
+
+
+// colors
+$background_dark : #fce6d2;
+$font_color: #58402c;
+$link_color: #30488f;
+
+// mixins
+
+@mixin block-container-white{
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-left: 59px;
+  padding-right: 59px;
+  color: #58402c;
+  display: flex;
+}
+
+@mixin half-block {
+  width: 50%;
+}
+
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-start-centered {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+// google button
+
+
+@mixin google-button {
+  .google-button {
+    height: 40px;
+    border-width: 0;
+    border: 1px solid #2e468e;
+    background: white;
+    color: #737373;
+    border-radius: 5px;
+    white-space: nowrap;
+    box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.05);
+    padding: 0;
+
+    &:focus,
+    &:hover {
+      box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.1);
+      background: #2e468e;
+
+      .google-button__text{
+        color: white;
+      }
+    }
+
+    &:active {
+      background-color: #e5e5e5;
+      box-shadow: none;
+    }
+  }
+
+  .google-button__icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 8px 0 8px 8px;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+  }
+
+
+  .google-button__text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Roboto',arial,sans-serif;
+
+  }
+
+}

@@ -1,0 +1,45 @@
+
+.quote-box{
+  width: 626px;
+  height: 440px;
+  padding: 20px 20px 20px 40px;
+  background: white;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  text-align: left;
+  line-height: 1.5;
+  color: $font_color;
+  font-size: 16px;
+  position: relative;
+
+  .founders-wrapper {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+
+    img {
+      width: 38px;
+      height: 38px;
+      margin-right: 10px;
+    }
+
+    .founders-sign {
+      width: 200px;
+      font-size: 13px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      a {
+        color: $link_color
+      }
+    }
+
+    .quote {
+      position: absolute;
+      top: -22px;
+      left: 0px;
+    }
+  }
+}
