@@ -1,5 +1,5 @@
 # apachesmixsass-teambit
-<h1> This is a clone of the TeamBit Homepage using SASS techonology </h1>
+<h1> This is a clone of the TeamBit Homepage using SASS technology </h1>
 
 ![](screenshot_1.png)
 
